@@ -1,0 +1,59 @@
+.hidden {
+    color: transparent;
+}
+
+body {
+    background-image: url(l7.jpg);
+    background-size: 100%;
+
+
+    color: red;
+    font-family: 'SF Pixelate', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wordContainer {
+    margin-top: 20px;
+}
+
+.letter { 
+    margin: 0 7px;
+    position: relative;
+    text-align: center;
+
+}
+
+.letter::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    min-width: 12px;
+}
+
+#startButton {
+    margin-top: 20px;
+    appearance: none;
+    font-family: 'SF Pixelate', sans-serif;
+    border: none;
+    width: 300px;
+    padding: 10px;
+    background: red;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 4px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#startButton:hover{
+    background: red;
+    transform: scale(1.2) ;
+}
